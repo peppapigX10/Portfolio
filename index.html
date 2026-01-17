@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Peperi|Portfolio</title>
+</head>
+<body>
+    <header>
+        <a class="Logo" href="#Home">PEPERI</a>
+        <nav>
+            <ul class="main-navbar">
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="Home">
+        <div class="home-container">
+            <h1 class="Peperi">Peperi</h1>
+            <h2 class="home-text">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.</h2>
+            <a class="home-button" href="#Projects"><button >Discover More</button></a>
+        </div>
+    </section>
+    <section id="Projects">
+        <nav>
+            <div class="projects-navbar">
+                <!--<p class="p-heading">PROJECTS</p>-->
+                <ul>
+                    <li class="bold"><a href="#Projects">View all</a></li>
+                    <li><a href="#coding">Coding</a></li>
+                    <li><a href="#ui-design">UI Design</a></li>
+                </ul>
+            </div>
+        </nav>
+            <div class="p-grid">
+                <div class="p-card">
+                    <img src="img/card3-template.png" alt="img1" class="card-img">
+                    <p class="project-text">Project Title</p>
+                    <a class="p-button" href=""><button >Link</button></a>
+                </div>
+                <div class="p-card">
+                    <img src="img/card3-template.png" alt="img1" class="card-img">
+                    <div class="project-text">Project Title</div>
+                </div>
+                <div class="p-card">
+                    <img src="img/card3-template.png" alt="img1" class="card-img">
+                    <div class="project-text">Project Title</div>
+                </div>
+                <div class="p-card">
+                    <img src="img/card3-template.png" alt="img1" class="card-img">
+                    <div class="project-text">Project Title</div>
+                </div>
+            </div>
+        
+    </section>
+
+    <div id="root"></div>
+    
+    <!-- React libraries -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Js file -->
+    <script src="js/script.js"></script>
+    
+    <!-- Your React file -->
+    <script type="text/babel" src="react-js/script.js"></script>
+</body>
+</html>
