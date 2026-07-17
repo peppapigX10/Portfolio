@@ -1,11 +1,16 @@
+ /* <weight>: Use a value from 100 to 700
+ <uniquifier>: Use a unique and descriptive class name */
+
 html {
     scroll-behavior: smooth;
 }
 
 * {
+    box-sizing: border-box;
+    max-width: 100%;
     padding: 0;
     margin: 0;
-    font-family: "serif";
+    font-family: "Google Sans Flex","sans-serif";
     color:#ba3808;
 }
 
@@ -62,7 +67,7 @@ header {
 }
 
 .Logo:hover {
-    color: #398714;
+    color: #2e0303;
     /*cool hover effect*/
 }
 
@@ -83,8 +88,7 @@ header {
 }
 
 .main-navbar li a:hover {
-    color: #398714;
-    text-decoration: underline;
+    color: #2e0303;
 }
 
 .project-navbar li {
@@ -92,7 +96,7 @@ header {
 }
 
 .project-navbar li a:hover {
-    color: #398714;
+    color: #2e0303;
 }
 
 .p-heading {
@@ -122,7 +126,7 @@ header {
 }
 
 .projects.navbar li a:hover{
-    color: #398714;
+    color: #2e0303;
 }
 
 .home-container {
@@ -131,11 +135,13 @@ header {
     /* padding:70px 0px; */
     border-radius: 13px;
     background-image:url("../img/home-photo.jpg");
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
-    /* background-size: contain; */
     margin: 0 30px;
+    /* background-size: contain; */
+    padding: 0 30px;
 }
 
 .home-container a {
@@ -149,26 +155,26 @@ header {
     font-size: 1rem;
     color: #f4ddcb;
     text-align: left;
-    padding-left:50px;
+    padding-left:40px;
     width:480px;
 
 
 }
 .Peperi {
     letter-spacing: 5px;
-    padding-left:50px;
+    padding-left:40px;
     padding-bottom: 10px;
     font-weight: normal;
     font-size: 3rem;
     color: #f4ddcb;
     text-align: left;
-    padding-top:243px;
+    padding-top:220px;
 
 }
 
 .button-container {
     display:flex;
-    padding-left:50px;
+    padding-left:40px;
 }
 .home-button {
     all: unset; 
@@ -239,7 +245,7 @@ header {
 }
 
 
-.p-button {
+/* .p-button {
     background-color:rgba(190, 202, 169, 0.2);
     color: rgba(231, 222, 206,1);
     border: 2px solid #e7dece;
@@ -259,40 +265,91 @@ header {
 .p-button:hover {
     background-color:#e7dece;
     color: #ba3808;
-}
+} */
 
 .about-container {
-    display: flex;
-    padding: 30px 30px;
-    /* padding-top: 60px;
-    display:flex;
-    margin: 0 30px;
-    gap: 20px; */
+    padding-top:80px;
 }
 
-.about-img {
-    vertical-align: middle;
-    width:10px;
-} 
-
-.about-column1 {
-    padding-left: 20px;
-    padding-right: 100px;
+.about-grid {
+    margin: 0 5vw;
+    margin-top:30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6vw;
 }
 
-.about-column2 {
+.about-grid h4{
+    padding-bottom: 20px;
+}
+
+.about-container h3{
+    margin-left: 70px;
+}
+
+
+
+.about-item1 {
+    width:20vw;
+}
+
+.about-img-class {
+}
+
+.about-item2 {
+    width:32.5vw;
+    padding:0 70px;
+    padding-top: 9%;
+    height: 100%;
+    position:relative;
+    box-sizing: border-box;
+
+
+}
+
+.borderCanvas, .borderCanvas2 {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.about-text-con{
+    position: relative;
+    z-index:2;
+}
+
+.about-item3 {
+    width:20vw;
+    padding:0 70px;
+    padding-top: 9%;
+    height: 100%;
+    position:relative;
+    box-sizing: border-box;
+    background-color: black;
+
+}
+
+/* .about-column2 {
     width:200px;
 
     background-image:url("../img/about-img.png");
     background-size:contain;
     background-repeat:no-repeat;
     
+} */
+
+
+.about-head {
+    text-align: left;
+    font-weight:400;
+
 }
 
-
 .about-text {
-    text-align:left;
-    width:800px;
+    text-align: left;
 }
 
 .contact-container {
@@ -319,15 +376,35 @@ header {
     text-decoration: underline;
 }
 
+@media screen and (max-width:768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap:0;
+    }
+}
 
 @media screen and (max-width: 480px) {
+    .home-text {
+        
+    }
+
+    .Peperi {
+    }
+
+    .button-container {
+    }
+
+    .main-navbar li {
+        padding:0 10px;
+    }
+
     .about-column2 {
         padding-top:20px;
         width:200px;
     }
 
     .project-text {
-        font-size:20px;
+        font-size:1rem;
     }
 
     .Peperi {
@@ -367,6 +444,32 @@ header {
     .home-container {
         background-repeat: repeat;
     }
+
+    .about-column1 {
+        padding-right: 0px;
+    }
+
+    /* .about-column2 {
+        width:0;
+        background-image:url("../img/about-img.png");
+        background-size:contain;
+        background-repeat:no-repeat;
+    } */
+
+    .about-text {
+        /* width:800; */
+    }
+
+    .about-img-class {
+        float:none;
+        display:block;
+        width:auto;
+        margin: 0 auto 15px;
+    }
+
+    
+
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -409,7 +512,7 @@ header {
     }
 
     .p-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .about-column2 {
