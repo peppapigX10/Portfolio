@@ -75,7 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Your existing button filtering logic (Left untouched) ---
     const projectsBtn = document.getElementById('projects-btn');
     const codingBtn = document.getElementById('coding-btn');
     const designBtn = document.getElementById('design-btn');
