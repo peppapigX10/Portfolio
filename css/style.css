@@ -157,9 +157,8 @@ header {
     text-align: left;
     padding-left:40px;
     width:480px;
-
-
 }
+
 .Peperi {
     letter-spacing: 5px;
     padding-left:40px;
@@ -168,7 +167,7 @@ header {
     font-size: 3rem;
     color: #f4ddcb;
     text-align: left;
-    padding-top:220px;
+    padding-top:210px;
 
 }
 
@@ -296,11 +295,12 @@ header {
 .about-img-class {
 }
 
-.about-item2 {
+.about-item2, .about-item3 {
     width:32.5vw;
     padding:0 70px;
     padding-top: 9%;
     height: 100%;
+    padding-bottom:9%;
     position:relative;
     box-sizing: border-box;
 
@@ -321,7 +321,7 @@ header {
     z-index:2;
 }
 
-.about-item3 {
+/* .about-item3 {
     width:20vw;
     padding:0 70px;
     padding-top: 9%;
@@ -330,7 +330,7 @@ header {
     box-sizing: border-box;
     background-color: black;
 
-}
+} */
 
 /* .about-column2 {
     width:200px;
@@ -376,14 +376,167 @@ header {
     text-decoration: underline;
 }
 
-@media screen and (max-width:768px) {
+
+@media screen and (max-width: 1024px) {
+    
+    .main-navbar {
+        /* background-color:aqua; */
+    }
+
+    .about-column2 {
+        margin-top:50px;
+        width:230px;
+    }
+
+    .about-text {
+        /* width:300px */
+    }
+
+    .project-text {
+        font-size:20px;
+    }
+
+
+
+    .Peperi {
+        font-size:3rem;
+    }
+
+    .home-text {
+        font-size:1rem;
+        max-width:410px;
+    }
+
+    .Peperi {
+        padding-top: 180px;
+    }
+
+    .home-button {
+        margin: 15px 0;
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+
+    .home-container {
+        padding: 50px 0;
+    }
+
+    .about-item1{
+        width:40vw;
+    }
+    .about-item2 {
+        
+        width:100%;
+    }
+    .about-item3 {
+        width:100%;
+    }
     .about-grid {
-        grid-template-columns: 1fr;
+        display:grid;
+        grid-template-columns: 0.8fr 1fr;
+        grid-template-rows: repeat(2,1fr);
+
         gap:0;
+    }
+
+    .p-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-column2 {
+    padding-left: 20px;
+    padding-right: 0;
+    
+    }
+
+    .about-column2 {
+    padding-right: 0;
+    }
+
+    .home-container {
+        background-repeat: repeat;
+
     }
 }
 
+@media screen and (max-width:950px) {
+    .main-navbar {
+        /* background-color:pink; */
+    }
+
+    
+
+    .about-grid {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.7fr 0.4fr;
+        gap:0;
+        /* background-color:tomato; */
+    }
+
+    .about-item1 {
+        width:60vw;
+    }
+
+    .about-item2{
+        width:80vw;
+    }
+
+    .about-item3  {
+        width:50%;
+    }
+    /* .about-item1{
+        width:55vw;
+        grid-column:span 2;
+    }
+    .about-item2, .about-item3{
+        padding-left: 70px;
+        height:100%;
+        background-color:aqua;
+    }
+    .about-text{
+        background-color:#2e0303;
+        height:50%;
+    } */
+}
+
+@media screen and (max-width: 700px) {
+    .main-navbar{
+        /* background-color:black */
+    }
+    .p-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-grid {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.7fr 0.4fr;
+        gap:0;
+        /* background-color:tomato; */
+    }
+
+    .about-item1 {
+        width:60vw;
+    }
+
+    .about-item2{
+        /* width:60vw; */
+        width: 80vw;
+    }
+
+    .about-item3  {
+        width:70%;
+    }
+}
+
+
 @media screen and (max-width: 480px) {
+    .main-navbar {
+        /* background-color:tomato; */
+    }
     .home-text {
         
     }
@@ -467,73 +620,15 @@ header {
         margin: 0 auto 15px;
     }
 
-    
-
-
-}
-
-@media screen and (max-width: 1024px) {
-    .about-column2 {
-        margin-top:50px;
-        width:230px;
-    }
-
-    .about-text {
-        width:300px
-    }
-
-    .project-text {
-        font-size:20px;
-    }
-
-
-
     .Peperi {
-        font-size:3rem;
+        padding-top:143px;
     }
 
     .home-text {
-        font-size:1rem;
-        max-width:410px;
-    }
+        width:320px;
 
-    .Peperi {
-        padding-top: 280px;
     }
-
-    .home-button {
-        margin: 15px 0;
-        padding: 5px 10px;
-        font-size: 0.9rem;
-    }
-
-    .home-container {
-        padding: 50px 0;
-    }
-
-    .p-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .about-column2 {
-    padding-left: 20px;
-    padding-right: 0;
     
-    }
 
-    .about-column2 {
-    padding-right: 0;
-    }
 
-    .home-container {
-        background-repeat: repeat;
-
-    }
-    /* .about-img {
-
-        width: 500px;
-        height: 200px;
-        border-radius:100px;
-        object-fit: cover;
-    } */
 }
