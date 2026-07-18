@@ -76,6 +76,7 @@ header {
     text-align: right;
 }
 
+
 .main-navbar li {
     display: inline-flex;
     padding: 0 20px;
@@ -528,7 +529,7 @@ header {
     }
 
     .about-item3  {
-        width:70%;
+        width:90%;
     }
 }
 
@@ -537,15 +538,7 @@ header {
     .main-navbar {
         /* background-color:tomato; */
     }
-    .home-text {
-        
-    }
-
-    .Peperi {
-    }
-
-    .button-container {
-    }
+    
 
     .main-navbar li {
         padding:0 10px;
